@@ -74,10 +74,10 @@
             },
             get_current_locale = () => {
                 let current_locale = "en-US";
-                if (window.location.href.includes("articles-staging")) {
+                if (window.location.href.includes("articles")) {
                     current_locale = "en-US";
                 } else
-                if (window.location.href.includes("articulos-staging")) {
+                if (window.location.href.includes("articulos")) {
                     current_locale = "es-ES";
                 }
                 return current_locale;
