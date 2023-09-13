@@ -16,10 +16,10 @@
                 let article_date = new Date(current_article_object.date_created);
                 let article_date_string = "";
                 if (get_current_locale() === "en-US") {
-                    article_date_string = article_date.toLocaleString(get_current_locale(), { month: 'long' }) + " " + article_date.getDay() + ", " + article_date.getFullYear();
+                    article_date_string = article_date.toLocaleString(get_current_locale(), { month: 'long' }) + " " + article_date.getDate() + ", " + article_date.getFullYear();
                 } else
                 if (get_current_locale() === "es-ES") {
-                    article_date_string = article_date.getDay() + " de " + article_date.toLocaleString(get_current_locale(), { month: 'long' }) + " del " + article_date.getFullYear();
+                    article_date_string = article_date.getDate() + " de " + article_date.toLocaleString(get_current_locale(), { month: 'long' }) + " del " + article_date.getFullYear();
                 }
 
                 let sanitized_article_object = {
