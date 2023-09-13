@@ -248,9 +248,11 @@
                 let flag = document.getElementById("flag");
                 if (get_current_locale() === "en-US") {
                     flag.src = "images/mexico_flag.png";
+                    flag.parentElement.href = "https://articles.rauluriartejr.com/";
                 } else
                 if (get_current_locale() === "es-ES") {
                     flag.src = "images/us_flag.png";
+                    flag.parentElement.href = "https://articulos.rauluriartejr.com/";
                 }
             },
             handle_hash_change = () => {
